@@ -28,7 +28,8 @@ Module Module1
         Loop Until swapped = False
 
         'Print out the elements
-        For count = 1 To maxsize
+For count = 1 To height.Length - 1 'maxsize at line 27 reduces, hence giving less number of outpurs
+                                    'thats why height.Length - 1 is added :)
             Console.WriteLine(count & ": " & height(count))
         Next
         Console.ReadKey()
