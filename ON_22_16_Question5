@@ -1,0 +1,27 @@
+Module Module1
+
+    Sub Main()
+        Dim PlayerName(7) As String
+        Dim i As Integer
+        Dim playernumber As Integer
+        Dim thisplayername As String
+        FileOpen(1, My.Application.Info.DirectoryPath & "\names.txt", OpenMode.Input)
+        i = 0
+        Do
+            PlayerName(i) = LineInput(1)
+
+            i = i + 1
+        Loop Until EOF(1)
+
+        Console.Write("Enter Name : ")
+        thisplayername = Console.ReadLine()
+        For i = 0 To 7
+            If thisplayername = PlayerName(i) Then
+                playernumber = i
+            End If
+        Next
+        Console.WriteLine(" the player number is " & playernumber)
+        Console.ReadKey()
+    End Sub
+
+End Module
