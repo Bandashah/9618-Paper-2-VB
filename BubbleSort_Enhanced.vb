@@ -10,6 +10,7 @@ Module Module1
         maxsize = 5
 
         For count = 1 To 5
+            Console.Write(" Enter Height of a student in cenitmeters : ")
             height(count) = Console.ReadLine()
         Next
         'sort the elements
@@ -28,7 +29,7 @@ Module Module1
         Loop Until swapped = False
 
         'Print out the elements
-        For count = 1 To maxsize
+        For count = 1 To 5
             Console.WriteLine(count & ": " & height(count))
         Next
         Console.ReadKey()
