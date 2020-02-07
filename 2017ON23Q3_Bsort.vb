@@ -3,7 +3,7 @@ Module Module1
     Sub main()
         Dim UserNameArray() = {"567843Kamran", "765345Ali", "234543shameer", "1123432InduaraMethamal", "345654Shahroshano", "665432MrSadiqHussain"}
         Dim swapped As Boolean
-        Dim temp As Integer
+        Dim temp As string
         Dim maxsize As Integer
         Dim x1, x2 As String
         maxsize = 5
