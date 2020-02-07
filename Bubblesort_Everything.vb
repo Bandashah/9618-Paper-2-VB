@@ -1,3 +1,5 @@
+Module Module1
+
 Sub main()
         Dim height() = {45, 67, 23, 45, 21, 78, 90, 11, 21}
         Dim swapped As Boolean
@@ -15,7 +17,7 @@ Sub main()
                     temp = height(count)
                     height(count) = height(count + 1)
                     height(count + 1) = temp
-                    ' swapped = True
+                    swapped = True
                 End If
                 counter = counter + 1
             Next
