@@ -12,7 +12,7 @@ Module Module1
 
         For n = 1 To Len(instring) ' from first to last
             NextChar = Mid(instring, n, 1) ' get next character
-            If NextChar <> UCase(NextChar) Then ' check if upper case
+            If NextChar = UCase(NextChar) Then ' check if upper case
 
                 If n > 1 Then ' if not first character
 
