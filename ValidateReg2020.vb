@@ -1,7 +1,7 @@
 Module Module1
 
     Sub Main()
-        Console.WriteLine(ValidateRegistration("ACV45VDFF"))
+        Console.WriteLine(ValidateRegistration("ACV45VDTF"))
 
         Console.ReadKey()
 
@@ -14,7 +14,7 @@ Module Module1
         If Len(Registration) <> 6 And Len(Registration) <> 9 Then
             validate = False
         End If
-        For count = 1 To Len(Registration)
+        For count = 1 To 3
             nextchar = Mid(Registration, count, 1)
             If nextchar <> UCase(nextchar) Then validate = False
         Next
@@ -22,7 +22,10 @@ Module Module1
             nextchar = Mid(Registration, count, 1)
             If nextchar < "0" Or nextchar > "9" Then validate = False
         Next
-
+        For count = 6 To 9
+            nextchar = Mid(Registration, count, 1)
+            If nextchar <> UCase(nextchar) Then validate = False
+        Next
 
         Return validate
     End Function
